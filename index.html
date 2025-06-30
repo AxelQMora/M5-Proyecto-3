@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./main.js"></script>
 </head>
 
@@ -14,7 +15,7 @@
         <div id="image">
             
         </div>
-
+        
         <header>
             <h1>
                 NASA's image of the day
@@ -23,34 +24,46 @@
             <div class="search-box">
                 <input type="date" id="search-input" />
                 <div class="buttons">
-                    <button>Fetch</button>
-                    <button>Axios</button>
+                    <button id="fetchButton">Fetch</button>
+                    <button id="axiosButton">Axios</button>
                 </div>
             </div>
         </header>
 
         <div id="info-container">
-            <section class="info-card">
+            <section id="title" class="info-card">
                 Title
+                <h3 id="titleSpace">
+
+                </h3>
             </section>
 
-            <section class="info-card">
+            <section id="date" class="info-card">
                 Date
+                <p id="dateSpace">
+
+                </p>
             </section>
 
-            <section class="info-card">
+            <section id="explanation" class="info-card">
                 Explanation
+                <p id="explanationSpace">
+
+                </p>
             </section>
 
-            <section class="info-card">
+            <section id="link" class="info-card">
                 Link
+                <p id="linkSpace">
+
+                </p>
             </section>
         </div>
 
     </div>
 
     <footer>
-        Selector de fecha - Tema oscuro - Axel Daniel Quintana Mora
+        API NASA - Tema oscuro - Axel Daniel Quintana Mora
     </footer>
 
 </body>

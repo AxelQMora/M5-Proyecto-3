@@ -14,12 +14,27 @@ body {
   min-height: 100vh;
 }
 
+h3 {
+    color:  #e0e0e0;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
 #image {
     background-color: var(--gray);
     width: 29vw;
     height: 90vh;
     border-radius: 20px;
     margin-left: 1vw;
+    background-image: none;
+}
+
+#link {
+    overflow-wrap: break-word
 }
 
 #info-container {
